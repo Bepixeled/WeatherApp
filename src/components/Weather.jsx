@@ -87,17 +87,20 @@ function Weather() {
       <div className='w-80 rounded-lg h-auto min-h-24 p-2 bg-gradient-to-b from-light-verdigris-600 to-light-bondi_blue-700 shadow-md shadow-light-bondi_blue-300 mt-8'>
         <div className='flex flex-row justify-between items-stretch h-auto w-[]'>
 
-          {hourlyData.slice(1, 6).map((hour, index) => 
-          (
+          {hourlyData.slice(1, 6).map((hour, index) => (
             <div
               key={index}
               className='bg-gradient-to-t from-light-verdigris-700 to-light-bondi_blue-700 shadow-md shadow-light-bondi_blue-300 rounded-lg flex flex-col justify-between items-center align-middle w-14 h-auto p-2 '
             >
-              <p id="timefc" className='font-Poppins text-sm font-semibold mb-2'>
-                {hour.datetime}
+              <p
+                id='timefc'
+                className='font-Poppins text-sm font-semibold mb-2'
+              >
+                {hour.datetime.split(':').slice(0, 2).join(':')}{' '}
+
               </p>
               <img src={Sun} className='w-12' />
-              <p id="tempfc" className='font-Poppins text-sm mt-2'>
+              <p id='tempfc' className='font-Poppins text-sm mt-2'>
                 {hour.temp}°C
               </p>
             </div>
