@@ -4,6 +4,7 @@ import { Sun, Cloud, CloudyDay, Fog, Hail, HeavyRain, Rainy, Snowy, Storm, Thund
 import UilTear from '@iconscout/react-unicons/icons/uil-tear'
 import UilWind from '@iconscout/react-unicons/icons/uil-wind'
 import UilEye from '@iconscout/react-unicons/icons/uil-eye'
+import { format } from 'date-fns';
 
 function Weather() {
   const [weatherData, setWeatherData] = useState([]);
@@ -86,7 +87,7 @@ function Weather() {
       <div className='w-80 rounded-lg h-auto min-h-24 p-2 bg-gradient-to-b from-light-verdigris-600 to-light-bondi_blue-700 shadow-md shadow-light-bondi_blue-300 mt-8'>
         <div className='flex flex-row justify-between items-stretch h-auto w-[]'>
 
-          {hourlyData.slice(1, 6).map((hour, index) =>
+          {hourlyData.slice(1, 6).map((hour, index) => 
           (
             <div
               key={index}
