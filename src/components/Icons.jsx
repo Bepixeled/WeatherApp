@@ -1,6 +1,7 @@
 import React from 'react'
 import Blizzard from '../assets/blizzard.png'
 import Cloud from '../assets/cloud.png'
+import CloudyNight from '../assets/cloudy-night.png'
 import CloudyDay from '../assets/cloudy-day.png'
 import Cold from '../assets/cold.png'
 import CrescentMoon from '../assets/crescent-moon.png'
@@ -29,4 +30,4 @@ function Icons() {
   )
 }
 
-export  {Blizzard, Cloud, CloudyDay, Cold, CrescentMoon, Fog, FullMoon, Hail, HeavyRain, Hot, Humidity, RainyDay, RainyNight, Rainy, Sleet, Snowy, Storm, Sun, Sunrise, Sunset, ThunderStorm, Wind, Windy}
+export  {Blizzard, Cloud, CloudyDay, CloudyNight, Cold, CrescentMoon, Fog, FullMoon, Hail, HeavyRain, Hot, Humidity, RainyDay, RainyNight, Rainy, Sleet, Snowy, Storm, Sun, Sunrise, Sunset, ThunderStorm, Wind, Windy}

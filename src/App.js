@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="App flex flex-col items-center w-full h-auto lg:h-screen bg-gradient-to-b from-light-keppel-800 to-light-emerald-700 my-auto pt-6 pb-10 ">
+    <div className="flex flex-col items-center w-full h-auto lg:h-screen bg-gradient-to-b from-light-keppel-800 to-light-emerald-700 my-auto pt-6 pb-10 ">
       <div className='flex flex-row items-center'> {/* Header */}
         <input
           id="search"
